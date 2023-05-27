@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+/* header */
+.my__header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  font-family: "Roboto Slab", serif;
+}
+.header____inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.header__logo {
+  font-size: 25px;
+  color: #d30a0a;
+}
+/* nav */
+.my__nav {
+  margin-top: 7px;
+  font-size: 20px;
+  text-transform: lowercase;
+  margin-left: auto;
+  float: right;
+}
+.nav__link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 40px;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s linear;
+}
+.nav__link:after {
+  content: "";
+  display: block;
+  opacity: 0;
+  width: 100%;
+  background-color: #d30a0a;
+  height: 3px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  transition: opacity 0.2s linear;
+}
+.nav__link:hover {
+  color: #d30a0a;
+}
+.nav__link:hover:after {
+  display: block;
+  opacity: 1;
+}
+/* intro */
+.intro {
+  padding: 2em;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-evenly;
+  background-color: #e1e1e1;
+}
+.intro__inner {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px;
+  text-align: left;
+}
+.intro__suptitle {
+  margin: 50 auto;
+  font-size: 70px;
+}
+.intro__title {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1;
+  color: #333;
+}
+.intro__logo {
+  font-size: 85px;
+  color: #d30a0a;
+}
+
+/* Button */
+.intro__btn {
+  float: right;
+  margin-top: 150px;
+  margin-bottom: 10px;
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 10px 20px;
+  border: 3px solid #fff;
+  text-transform: lowercase;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background 0.2s linear, color 0.2s linear;
+  color: #333;
+}
+.intro__btn:hover {
+  background-color: #333;
+  color: #d30a0a;
+}
+
+/* photo */
+.call__photo {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(26, 0, 0, 0.3);
+  margin-right: 50em;
+  margin: 5px 5px 5px 0;
+  padding: 0.3em;
+}
